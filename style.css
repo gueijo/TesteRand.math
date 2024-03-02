@@ -1,0 +1,154 @@
+
+* {
+    background-color: orangered;
+}
+
+.imgsim {
+        width: 100px;
+        position: absolute;
+        left: 500px;
+        top: 0;
+        z-index: 0;
+        animation: sim 2s forwards;
+    }
+
+    @keyframes sim {
+        0%{
+            width: 100px;
+            opacity: 0;
+            rotate: -180deg;
+        }
+        100% {
+            width: 937px;
+            opacity: 1;
+            rotate: 360deg;
+        }
+    }
+    .balao1 {
+        animation: balin1 2s forwards;
+        z-index: 1;
+    }
+    @keyframes balin1 {
+        0% {
+            position: absolute;
+            top: 500px;
+            left: 1500px;
+        }
+        100% {
+            position: absolute;
+            left: 0px;
+            top: 200px;
+        }
+    }
+    @keyframes balin2 {
+        0% {
+            position: absolute;
+            top: 900px;
+            left: 50px;
+        }
+        100% {
+            position: absolute;
+            left: 2000px;
+            top: -900px;
+        }
+    }
+    @keyframes balin3 {
+        0% {
+            position: absolute;
+            top: 500px;
+            left: 0px;
+        }
+        100% {
+            position: absolute;
+            left: 900px;
+            top: -200px;
+        }
+    }
+    .balao2 {
+        position: absolute;
+        width: 200px;
+        z-index: 2;
+        animation: balin3 2s forwards;
+    }
+    .balao3 {
+        position: absolute;
+        width: 900px;
+        z-index: 3;
+        animation: balin2 2s forwards;
+    }
+        @media (max-width: 767px) {
+           
+                .imgsim {
+                    width: 100px;
+                    position: absolute;
+                    left: -100px;
+                    top: 0;
+                    z-index: 0;
+                    animation: sim 2s forwards;
+                }
+
+                @keyframes sim {
+                    0%{
+                        width: 100px;
+                        opacity: 0;
+                        rotate: -180deg;
+                    }
+                    100% {
+                        width: 937px;
+                        opacity: 1;
+                        rotate: 360deg;
+                    }
+                }
+                .balao1 {
+                    animation: balin1 2s infinite;
+                    z-index: 1;
+                }
+                
+                }
+                .balao2 {
+                    position: absolute;
+                    width: 200px;
+                    z-index: 2;
+                    animation: balin3 2s infinite;
+                }
+                .balao3 {
+                    position: absolute;
+                    width: 900px;
+                    z-index: 3;
+                    animation: balin2 2s infinite;
+                } @keyframes balin1 {
+                    0% {
+                        position: absolute;
+                        top: 500px;
+                        left: 800px;
+                    }
+                    100% {
+                        position: absolute;
+                        left: 0px;
+                        top: -200px;
+                    }
+                }
+                @keyframes balin2 {
+                    0% {
+                        position: absolute;
+                        top: 900px;
+                        left: 0px;
+                    }
+                    100% {
+                        position: absolute;
+                        left: 800px;
+                        top: -900px;
+                    }
+                }
+                @keyframes balin3 {
+                    0% {
+                        position: absolute;
+                        top: 800px;
+                        left: 500px;
+                    }
+                    100% {
+                        position: absolute;
+                        left: -200px;
+                        top: 50px;
+                    }
+        }
